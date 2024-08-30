@@ -7,29 +7,58 @@ int findchar(char letter);
 int findstr(string str);
 
 int main() {
-	assert(findchar('T') == 0);
-	assert(findchar('h') == 1); 
-	assert(findchar('e') == 2);
-	assert(findchar(' ') == 3);
-	assert(findchar('q') == 4);
-	assert(findchar('u') == 5);
-	assert(findchar('i') == 6);
-	assert(findchar('c') == 7);
-	assert(findchar('k') == 8);
-	assert(findchar('b') == 9);
-	assert(findchar('r') == 10);
-	assert(findchar('o') == 11);
-	assert(findchar('w') == 12);
-	assert(findchar('n') == 13);
-	assert(findchar('f') == 14);
-	assert(findchar('o') == 15);
-	assert(findchar('x') == 16);
-	assert(findstr("The") == 0);
-	assert(findstr("quick") == 4);
-	assert(findstr("brown") == 9);
-	assert(findstr("fox") == 14);
+	int choose;
+	cout << "Choose 2 to enter a character and 4 to enter a substring: ";
+	cin >> choose;
+	switch (choose / 2) {
+	case 1:
+			assert(findchar('T') == 0);
+			break;
+			assert(findchar('h') == 1);
+			break;
+			assert(findchar('e') == 2);
+			break;
+			assert(findchar(' ') == 3);
+			break;
+			assert(findchar('q') == 4);
+			break;
+			assert(findchar('u') == 5);
+			break;
+			assert(findchar('i') == 6);
+			break;
+			assert(findchar('c') == 7);
+			break;
+			assert(findchar('k') == 8);
+			break;
+			assert(findchar('b') == 9);
+			break;
+			assert(findchar('r') == 10);
+			break;
+			assert(findchar('o') == 11);
+			break;
+			assert(findchar('w') == 12);
+			break;
+			assert(findchar('n') == 13);
+			break;
+			assert(findchar('f') == 14);
+			break;
+			assert(findchar('o') == 15);
+			break;
+			assert(findchar('x') == 16);
+			break;
+		
+		case 2:
+			assert(findstr("The") == 0);
+			break;
+			assert(findstr("quick") == 4);
+			break;
+			assert(findstr("brown") == 9);
+			break;
+			assert(findstr("fox") == 14);
+			break;
+		
+	}
 }
-
 
 int findchar(char letter)
 {
